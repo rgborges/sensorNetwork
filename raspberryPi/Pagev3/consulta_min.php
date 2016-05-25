@@ -19,7 +19,7 @@ if(mysqli_connect_errno())
 }
 
 $result = $db->query('SELECT * from iot.node;');
-
+echo '<head><link href="static/css/visual.css" rel="stylesheet"></head>';
 echo '<TABLE BORDER="3" class="sensor_table">';
 echo PHP_EOL;
 
