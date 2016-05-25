@@ -20,7 +20,14 @@ if(mysqli_connect_errno())
 
 $result = $db->query('SELECT * from iot.node;');
 echo '<head><link href="static/css/visual.css" rel="stylesheet"></head>';
-echo '<TABLE BORDER="3" class="sensor_table">';
+echo '<table class="sensor_table">
+    <tr>
+        <td class="table_header">Vari&aacute;vel Mensurada</td>
+        <td class="table_header">Valor</td>
+        <td class="table_header">Localiza&ccedil;&atilde;o</td>
+        <td class="table_header">IP</td>
+        <td class="table_header">Rede</td>
+    </tr>';
 echo PHP_EOL;
 
 while($func = $result->fetch_row())
