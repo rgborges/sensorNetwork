@@ -6,9 +6,9 @@
  *
  *
  *(TESTADO)
- */(Funcionando)  :: Rafael Borges Batista
+ *(Funcionando)  :: Rafael Borges Batista
 //inicio
-
+*/
 #include <Modbusino.h> //biblioteca Modbus (testada)
 
 
