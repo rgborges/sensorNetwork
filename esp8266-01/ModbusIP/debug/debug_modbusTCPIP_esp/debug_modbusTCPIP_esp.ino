@@ -30,7 +30,7 @@ modpoll -m tcp -t4:float -r 100 -c 5 -1 10.0.0.100
 
 
 //Modbus Registers Offsets (0-9999)
-const int SENSOR_IREG = 100;
+const int SENSOR_HREG = 96;
 
 //ModbusIP object
 ModbusIP mb;
@@ -59,7 +59,7 @@ void setup()
     Serial.println(WiFi.localIP());
 
     // Add SENSOR_IREG register - Use addIreg() for analog Inputs
-    mb.addIreg(SENSOR_IREG);
+    mb.addHreg(SENSOR_HREG, 0xff);
 
     ts = millis();
 }
@@ -69,10 +69,5 @@ void loop()
    //Call once inside loop() - all magic here
    mb.task();
 
-   //Read each two seconds
-   if (millis() > ts + 2000) {
-       ts = millis();
-       //Setting raw value (0-1024)
-       mb.Ireg(SENSOR_IREG,analogRead(A0)); //debug var 
-   }
+
 }

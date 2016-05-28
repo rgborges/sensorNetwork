@@ -17,7 +17,7 @@ uint16_t tab_reg[10];              //aloca 10 REGISTERS de tipo uint16_t
 
 void setup() 
 {
-    modbusino_slave.setup(115200); //seta a velocidade de transmição
+    modbusino_slave.setup(19200); //seta a velocidade de transmição
                                    // esta velocidade é mais indicada para a comunicação
                                    //com o ESP82660
 }
