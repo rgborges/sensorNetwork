@@ -1,0 +1,36 @@
+
+footer
+{
+  background-color: brown;
+  height: 30%;
+  border-radius: 3px;
+  text-align: center;  
+}
+footer p
+{
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  border: 12px; 
+}
+.table_header
+{
+    background-color: firebrick;
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table
+{
+  border: 1px solid red;
+  margin-left: 150px;  
+}
+#page_top
+{
+ text-align: center;
+ font-family: 'Times New Roman', Times, serif;
+ font-size: 26px;
+ color: white;
+ background-color: brown; 
+ height: 90px;
+}
